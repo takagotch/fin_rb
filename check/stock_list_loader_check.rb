@@ -1,0 +1,18 @@
+# coding: Windows-31J
+
+require "./lib/stock_list_loader"
+
+sll = StockListLoader.new("data/tosho_list.txt")
+
+puts sll.stock_info[0] #=> {:code=>1301,
+                       #    :market_section=>"“ŒØ1•”",
+                       #    :unit=>1000}
+puts sll.codes[0]              #=> 1301
+puts sll.codes.last            #=> 9997
+puts sll.market_sections[0]    #=> "“ŒØ‚P•”"
+puts sll.units[0]              #=> 1000
+
+puts sll.market_sections.include?("“ŒØ2•”")   #=> true
+sll.filter_by_market_section("“ŒØ1•”")
+puts sll.market_sections.include?("“ŒØ2•”")   #=> false
+
