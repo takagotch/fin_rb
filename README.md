@@ -1,5 +1,5 @@
 $bungle gem foo_bar-baz
-$tree foo_bar-baz
+$ls -R foo_bar-baz
 
 foo_bar-baz
 |---Gemfile
