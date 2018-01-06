@@ -1,17 +1,17 @@
 $bungle gem foo_bar-baz
 $ls -R foo_bar-baz
 
-- foo_bar-baz
-- |---Gemfile
-- |---LICENSE.txt
-- |---RAEDME.md
-- |---Rakefile
-- |---foo_bar-baz.gemspec
-- |---lib
--    |---foo_bar
--       |---baz
--       |  |---version.rb
--       |---baz.rb
+foo_bar-baz
+|---Gemfile
+|---LICENSE.txt
+|---RAEDME.md
+|---Rakefile
+|---foo_bar-baz.gemspec
+|---lib
+   |---foo_bar
+      |---baz
+      |  |---version.rb
+      |---baz.rb
 
 
 	  
